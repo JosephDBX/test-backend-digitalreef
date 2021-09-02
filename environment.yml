@@ -1,0 +1,39 @@
+name: web-flask
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - aniso8601=7.0.0=py_0
+  - ca-certificates=2021.5.30=h5b45459_0
+  - click=8.0.1=py39hcbf5309_0
+  - colorama=0.4.4=pyh9f0ad1d_0
+  - dataclasses=0.8=pyhc8e2a94_3
+  - flask=2.0.1=pyhd8ed1ab_0
+  - flask-graphql=2.0.1=pyh9f0ad1d_2
+  - graphene=2.1.9=pyhd8ed1ab_0
+  - graphql-core=2.3.2=pyh9f0ad1d_0
+  - graphql-relay=2.0.1=py_0
+  - graphql-server-core=1.2.0=py_1
+  - itsdangerous=2.0.1=pyhd8ed1ab_0
+  - jinja2=3.0.1=pyhd8ed1ab_0
+  - markupsafe=2.0.1=py39hb82d6ee_0
+  - openssl=1.1.1k=h8ffe710_1
+  - pip=21.2.4=pyhd8ed1ab_0
+  - promise=2.3=py39hcbf5309_3
+  - python=3.9.6=h7840368_1_cpython
+  - python-dateutil=2.8.2=pyhd8ed1ab_0
+  - python_abi=3.9=2_cp39
+  - rx=1.6.1=py_0
+  - setuptools=57.4.0=py39hcbf5309_0
+  - six=1.16.0=pyh6c4a22f_0
+  - sqlite=3.36.0=h8ffe710_0
+  - tzdata=2021a=he74cb21_1
+  - ucrt=10.0.20348.0=h57928b3_0
+  - vc=14.2=hb210afc_5
+  - vs2015_runtime=14.29.30037=h902a5da_5
+  - werkzeug=2.0.1=pyhd8ed1ab_0
+  - wheel=0.37.0=pyhd8ed1ab_1
+  - pip:
+    - flask-jwt==0.3.2
+    - pyjwt==1.4.2
+prefix: C:\Users\sb\anaconda3\envs\web-flask
