@@ -1,12 +1,10 @@
-from schemas.auth_schema import UserResponse, sign_in
-from graphene import ObjectType, Field, String
+from schemas.auth_schema import MessageField, ProtectedUnion
+from graphene import ObjectType, String, Field
+from flask_graphql_auth import query_jwt_required
 
 class Query(ObjectType):
-    hello: String()
-    sign_in = Field(UserResponse, email=String(required=True), password=String(required=True))
+    protected = Field(type=ProtectedUnion, token=String())
 
-    def resolve_hello(parent, info):
-        return 'Hello! Welcome to Digitalreef'
-
-    def resolve_sign_in(parent, info, email, password):
-        return sign_in(email=email, password=password)
+    @query_jwt_required
+    def resolve_protected(self, info):
+        return MessageField(message="Hello. Welcome to Digitalreef!")

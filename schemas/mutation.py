@@ -1,5 +1,5 @@
-""" from schemas.auth_schema import CreateUser
+from schemas.auth_schema import AuthMutation
 from graphene import ObjectType
 
 class Mutation(ObjectType):
-    create_user = CreateUser.Field() """
+    auth = AuthMutation.Field()
