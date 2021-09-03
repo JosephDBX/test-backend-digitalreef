@@ -16,7 +16,7 @@ MarkupSafe==2.0.1
 pip==21.2.4
 promise==2.3
 PyJWT==2.0.1
-python==3.9.6
+python==3.9.7
 python-dateutil==2.8.2
 python_abi==3.9
 Rx==1.6.1
