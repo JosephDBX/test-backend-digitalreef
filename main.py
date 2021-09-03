@@ -23,4 +23,4 @@ schema = Schema(query=Query, mutation=Mutation)
 app.add_url_rule('/api', view_func=GraphQLView.as_view('api', schema=schema, graphiql=True))
 
 if __name__ == "__main__":
-    app.run(debug=True, port=80)
+    app.run(port=80)
