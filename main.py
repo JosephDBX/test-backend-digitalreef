@@ -5,8 +5,10 @@ from flask import Flask
 from flask_graphql import GraphQLView
 from graphene import Schema
 from flask_graphql_auth import GraphQLAuth
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 """ Authentication """
 app.config["JWT_SECRET_KEY"] = "secret_key"

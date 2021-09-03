@@ -10,6 +10,7 @@ dependencies:
   - dataclasses=0.8=pyhc8e2a94_3
   - flask=2.0.1=pyhd8ed1ab_0
   - flask-graphql=2.0.1=pyh9f0ad1d_2
+  - flask_cors=3.0.10=pyhd3deb0d_0
   - graphene=2.1.9=pyhd8ed1ab_0
   - graphql-core=2.3.2=pyh9f0ad1d_0
   - graphql-relay=2.0.1=py_0
