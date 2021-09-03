@@ -42,8 +42,8 @@ class AuthMutation(Mutation):
         ok = True
         message = None
         user = None
-        access_token=None
-        refresh_token=None
+        access_token=(None,)
+        refresh_token=(None,)
 
         if (safe_str_cmp(memory_email.encode('utf-8'), username.encode('utf-8')) and safe_str_cmp(memory_password.encode('utf-8'), password.encode('utf-8'))):
             user=User(id=1, email=memory_email, name='Fulanito', last_name='López', photo_url='https://picsum.photos/600/600')
